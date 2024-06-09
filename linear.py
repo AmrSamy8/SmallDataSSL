@@ -38,8 +38,8 @@ class LinearModel(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_root', type=str, default='/home/soumitri/projects/def-josedolz/soumitri/misc/SmallSSL/data')
-    parser.add_argument('--out_root', type=str, default='/home/soumitri/projects/def-josedolz/soumitri/misc/SmallSSL/outputs')
+    parser.add_argument('--data_root', type=str, default='/content/SmallDataSSL/data')
+    parser.add_argument('--out_root', type=str, default='/content/SmallDataSSL/outputs')
     parser.add_argument('--epochs', type=int, default=200, help='training epochs')
     parser.add_argument('--load_model', type=str, help='path to pretrained model weights')
     parser.add_argument('--lrate', type=float, default=1.0, help='learning rate to be used')
