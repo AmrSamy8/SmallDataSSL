@@ -15,8 +15,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_root', type=str, default='/home/soumitri/projects/def-josedolz/soumitri/misc/SmallSSL/data')
-    parser.add_argument('--out_root', type=str, default='/home/soumitri/projects/def-josedolz/soumitri/misc/SmallSSL/outputs')
+    parser.add_argument('--data_root', type=str, default='/content/SmallDataSSL/data')
+    parser.add_argument('--out_root', type=str, default='/content/SmallDataSSL/outputs')
     parser.add_argument('--dataset', type=str, choices=['pneumonia', 'CRC', 'covid', 'breast'], help='choose dataset')
     parser.add_argument('--dstype', type=str, choices=['color', 'gray'], help='dataset is color/grayscale')
     parser.add_argument('--model', type=str, choices=['SimCLR', 'VICReg', 'Barlow', 'SimSiam', 'DCLW'], help='choose SSL model')
