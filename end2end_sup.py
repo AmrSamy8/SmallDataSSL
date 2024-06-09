@@ -35,8 +35,8 @@ class E2ESupModel(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_root', type=str, default='/home/soumitri/projects/def-josedolz/soumitri/misc/SmallSSL/data')
-    parser.add_argument('--out_root', type=str, default='/home/soumitri/projects/def-josedolz/soumitri/misc/SmallSSL/outputs')
+    parser.add_argument('--data_root', type=str, default='/content/SmallDataSSL/data')
+    parser.add_argument('--out_root', type=str, default='/content/SmallDataSSL/outputs')
     parser.add_argument('--epochs', type=int, default=100, help='training epochs')
     parser.add_argument('--load_model', type=str, help='path to pretrained model weights')
     parser.add_argument('--lr_enc', type=float, default=1e-3, help='learning rate for encoder')
